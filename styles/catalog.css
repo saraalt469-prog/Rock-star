@@ -1,0 +1,118 @@
+.catalog {
+  background-color: black;
+  display: flex;
+  max-width: 100%;
+  padding: 50px 0;
+}
+.catalog__content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.catalog__content-img-wr {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.catalog__content-img {
+  max-width: 500px;
+}
+.catalog__content-text-wr {
+  max-width: 500px;
+}
+.catalog__content-title {
+  font-size: 50px;
+}
+.catalog__content-text {
+  font-size: 20px;
+}
+.header2 {
+  max-width: 100%;
+  background-color: rgb(63, 62, 62);
+  padding: 10px 40px;
+}
+.logo {
+  border-radius: 50%;
+  max-width: 100px;
+  max-height: 100px;
+}
+.contain {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-height: 100px;
+  padding: 10px 40px;
+}
+.header2-navigation {
+  display: flex;
+  gap: 40px;
+}
+.header2__title {
+  font-size: 40px;
+}
+.header2-navigation-link {
+  color: rgb(173, 173, 173);
+}
+/* ------------------------- */
+.kurs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.kurs__card {
+  padding: 40px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.kurs__card-text {
+  max-width: 500px;
+  color: gray;
+}
+
+.kurs__card-img {
+  max-width: 400px;
+  max-height: 300px;
+}
+.kurs__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.kurs__card-title {
+  font-size: 30px;
+}
+ul {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+li {
+  color: gray;
+}
+.footer2__content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer2 {
+  background-color: black;
+  padding: 30px;
+}
+
+.footer2__text {
+  color: gray;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.header-navigation-link:hover {
+  color: rgb(192, 1, 1);
+}
