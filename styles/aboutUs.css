@@ -15,7 +15,11 @@
   font-size: 40px;
   text-align: center;
 }
-
+.hero2-section__title-wr {
+  background-color: rgb(5, 0, 0);
+  opacity: 0.7;
+  border-radius: 40px;
+}
 .history {
   background-color: black;
   padding: 10px 40px;

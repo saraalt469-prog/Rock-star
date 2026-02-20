@@ -1,23 +1,11 @@
 window.onload = function () {
-  var content = document.querySelector(".content");
+  loadPage("index.html");
+};
+var content = document.querySelector(".content");
+var homeC = content.innerHTML;
 
-  var homeC = content.innerHTML;
+var about = `  
 
-  var about = `    <div class="head">
-          <div class="contain">
-            <img
-              class="logo"
-              src="https://i.pinimg.com/736x/92/c5/d8/92c5d80effca7e40f59dbb9ea405cdaf.jpg"
-              alt=""
-            />
-            <p class="header2__title">Rock Star</p>
-            <nav class="header2-navigation">
-              <a class="header2-navigation-link home" data-page="index.html" href="#">главная </a>
-              <a class="header2-navigation-link aboutUs" data-page="aboutUs.html" href="#">о нас</a>
-              <a class="header2-navigation-link katalog"  data-page="katalog.html" href="#">каталог </a>
-            </nav>
-          </div>
-        </div>
         <div class="hero2-section">
           <p class="hero2-section__title">
             Мы научим тебя играть то, что ты любишь»
@@ -98,42 +86,9 @@ window.onload = function () {
             </div>
           </div>
         </div>
-            <footer class="footer2">
-          <div class="footer2__content">
-            <img
-              class="logo"
-              src="https://i.pinimg.com/736x/92/c5/d8/92c5d80effca7e40f59dbb9ea405cdaf.jpg"
-              alt=""
-            />
-            <div>
-    
-                <p class="footer2__text">Приходи на пробный урок — познакомимся, подберем программу, ответим на вопросы</p>
-                <p class="footer2__text">телефон: +7 (XXX) XXX-XX-XX</p>
-            </div>
-            <nav class="header2-navigation">
-              <a class="header2-navigation-link home" data-page="index.html" href="#">главная </a>
-              <a class="header2-navigation-link aboutUs" data-page="aboutUs.html"  href="#">о нас</a>
-              <a class="header2-navigation-link katalog"  data-page="katalog.html" href="#">каталог </a>
-            </nav>
-          </div>
-          </div>
-        </footer>`;
-  var catalog = `
-      <div class="header2">
-        <div class="contain">
-          <img
-            class="logo"
-            src="https://i.pinimg.com/736x/92/c5/d8/92c5d80effca7e40f59dbb9ea405cdaf.jpg"
-            alt=""
-          />
-          <p class="header2__title">Rock Star</p>
-          <nav class="header2-navigation">
-            <a class="header2-navigation-link home" data-page="index.html" href="#">главная </a>
-            <a class="header2-navigation-link aboutUs" data-page="aboutUs.html" href="#" >о нас</a>
-            <a class="header2-navigation-link katalog" data-page="katalog.html" href="#" >каталог </a>
-          </nav>
-        </div>
-      </div>
+            `;
+var catalog = `
+
       <div class="catalog">
         <div class="catalog__content">
           <div class="catalog__content-text-wr">
@@ -231,37 +186,17 @@ window.onload = function () {
           </div>
         </div>
       </div>
-      <footer class="footer2">
-        <div class="footer2__content">
-          <img
-            class="logo"
-            src="https://i.pinimg.com/736x/92/c5/d8/92c5d80effca7e40f59dbb9ea405cdaf.jpg"
-            alt=""
-          />
-          <div>
-  
-              <p class="footer2__text">Остались какие-то вопросы? Напишите нам!</p>
-              <p class="footer2__text">телефон: +7 (XXX) XXX-XX-XX</p>
-          </div>
-          <nav class="header2-navigation">
-            <a class="header2-navigation-link home" data-page="index.html" href="index.html">главная </a>
-            <a class="header2-navigation-link aboutUs" data-page="aboutUs.html" href="#" href="#">о нас</a>
-            <a class="header2-navigation-link katalog" data-page="katalog.html" href="#" href="#">каталог </a>
-          </nav>
-        </div>
-        </div>
-      </footer>`;
-  var links = document.querySelectorAll("nav a");
-  for (var i = 0; i < links.length; i++) {
-    links[i].onclick = function () {
-      if (this.className == "home") {
-        content.innerHTML = homeC;
-      } else if (this.className == "aboutUs") {
-        content.innerHTML = about;
-      } else if (this.className == "katalog") {
-        content.innerHTML = catalog;
-      }
-      return false;
-    };
-  }
-};
+     `;
+var links = document.querySelectorAll("nav a");
+for (var i = 0; i < links.length; i++) {
+  links[i].onclick = function () {
+    if (this.className == "home") {
+      content.innerHTML = homeC;
+    } else if (this.className == "aboutUs") {
+      content.innerHTML = about;
+    } else if (this.className == "katalog") {
+      content.innerHTML = catalog;
+    }
+    return false;
+  };
+}
